@@ -1,0 +1,16 @@
+body{
+  background-image: url('../images/home/homebg.jpg');
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  background-size: cover; /*this is important*/
+}
+
+.jfu{
+  margin-top: 20%;
+}
+
+#jfu{
+    width: 65%;
+    vertical-align: middle;
+}

@@ -8,6 +8,7 @@
 	
 <!--	BREAKBREAKBREAK-->
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
@@ -40,22 +41,6 @@
 	<!--BREAKBREAKBREAKBREAK-->
 <div class="container demo-2">
 		
-			<!-- Codrops top bar -->
-            <div class="codrops-top clearfix">
-                
-                <div class="clr"></div>
-            </div><!--/ Codrops top bar -->
-
-            <header class="clearfix">
-			
-
-				
-				<nav class="codrops-demos">
-					
-				</nav>
-				
-			</header>
-
             <div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
@@ -63,48 +48,40 @@
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-1"></div>
-<!--
 							<h2>A bene placito.</h2>
 							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
--->
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-2"></div>
-<!--
 							<h2>Regula aurea.</h2>
 							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
--->
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-3"></div>
-<!--
 							<h2>Dum spiro, spero.</h2>
 							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
--->
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-4"></div>
-<!--
 							<h2>Donna nobis pacem.</h2>
 							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
--->
 						</div>
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
 						<div class="sl-slide-inner">
 							<div class="bg-img bg-img-5"></div>
-<!--							<h2>Acta Non Verba.</h2>-->
-<!--							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>-->
+							<h2>Acta Non Verba.</h2>
+							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
 						</div>
 					</div>
 				</div><!-- /sl-slider -->
@@ -118,15 +95,120 @@
 				</nav>
 
 			</div><!-- /slider-wrapper -->
-
+	</div>
 <!--BREAKBREAKBREAKBREAK-->
 	
-<div class="content-wrapper">
-<!--				BLANK-->
-			</div>
+	<!--	BEGINNING OF PROMOTIONS-->
+		<div class="promotions">
+	<hr>
+		<h2> PROMOTIONS</h2>
+		<div class="paragraphs">
+			<p></br></br></br></br></br> </br></br></br></br></br</p>
+		</div>
+<hr>
+	</div>
+<!--END OF PROMOTIONS-->
+<!--BEGINNING OF CATEGORIES-->
+<div class="categories">
+	<h2>Categories</h2>
 
-        </div>
+<!--
+	<script>
+  var k = 0;
+
+  function flip() {
+	  var j = document.getElementsByClassName("thumbnail");
+//	  var j = document.getElementById("toflip1");
+    k += 180;
+    j.style.transform = "rotatey(" + k + "deg)";
+    j.style.transitionDuration = "0.5s"
+  }
+</script>
+-->
+	<div class="row medium-up-3 large-up-4">
+		<!-- flip div -->
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+				<div>
+					<img class="thumbnail" src="http://placehold.it/300x300">
+				</div>
+			</div>
+	</div>
+	<hr>
+</div>
+<footer>
+	<p>Copyright © 2012 The Example Company</p>
+	<p>
+		<a href="about.html">About</a> -
+		<a href="policy.html">Privacy Policy</a> -
+		<a href="contact.html">Contact Us</a>
+	</p>
+</footer>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!--<script src="js/flip.js"></script>-->
+	<script type="text/javascript" src="js/jsjs/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jsjs/foundation.js"></script>
+	<script type="text/javascript" src="js/jsjs/jquery.flip.js"></script>
+	
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
 		<script type="text/javascript">	
@@ -196,5 +278,6 @@
 			
 			});
 		</script>
+	<script type="text/javascript" src="js/jsjs/app.js"></script>
 	</body>
 </html>
