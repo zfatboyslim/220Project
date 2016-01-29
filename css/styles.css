@@ -47,7 +47,8 @@
 }
 
 hr {
-	width: 1150px;
+	width:95%;
+	margin-left: 25px;
     height: 30px;
     border-style: solid;
     border-color: black;
