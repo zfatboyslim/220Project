@@ -1,0 +1,29 @@
+<html>
+	<script>
+  var k = 0;
+
+  function flip() {
+    var j = document.getElementById("toflip");
+    k += 360;
+    j.style.transform = "rotatey(" + k + "deg)";
+    j.style.transitionDuration = "1s"
+  }
+</script>
+	<div>
+		<table>
+			<tr>
+			
+			</tr>
+			<tr>
+				<td><img class="thumbnail" src="http://placehold.it/300x300"></td>
+				<td><img id="toflip" onmouseover="flip()" class="thumbnail" src="http://placehold.it/300x300"></td>
+				<td><img id="toflip" onmouseover="flip()" class="thumbnail" src="http://placehold.it/300x300"></td>
+			</tr>
+	  		<tr>
+				<td><img class="thumbnail" src="http://placehold.it/300x300"></td>
+				<td><img class="thumbnail" src="http://placehold.it/300x300"></td>
+				<td><img class="thumbnail" src="http://placehold.it/300x300"></td>
+			</tr>
+		</table>
+	</div>
+</html>

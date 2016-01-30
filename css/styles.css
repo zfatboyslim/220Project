@@ -54,6 +54,58 @@ hr {
     border-color: black;
     border-width: 1px 0 0 0;
 }
+.promotions{
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.paragraphs{
+	
+}
+
+.categories{
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-align: center;
+	align-content: center;
+	
+}
+
+table{
+	margin-left: 150px;
+}
+
+#toflip{
+	
+}
+
+.flipped {
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -khtml-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+}
+
+footer{
+/*	font-weight: 1000;*/
+	text-transform: uppercase;
+	text-align: center;
+	align-content: center;
+	
+}
+footer a{
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	align-content: center;
+	
+}
+
+
 /*
 #navbar ul li a:hover {
   color: #333333;
