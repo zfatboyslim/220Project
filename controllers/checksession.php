@@ -12,7 +12,8 @@
 	
 	if($ses_userid != null){
 			if($ses_userid == session_id() && $ses_user != ""){
-				require("/../views/loggedas.php");
+				echo "Logged in as: ".$_SESSION['ses_username'];
+				echo "<form action='controllers/logout.php' action='post'><center><button type='submit'>LOGOUT</button></center></form>";
 			}else{
 				require("/../views/loginreg.html");
 			}
