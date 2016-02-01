@@ -12,7 +12,7 @@
 </div>
 
 <div id="login-dialog" class="dialog">
-  <form class="dialog-form" action="home.html" method="post">
+  <form class="dialog-form" action="index.php" method="post">
     <input type="text" name="username" placeholder="Username" />
     <input type="password" name="password" placeholder=" Password"/>
     <button type="submit" name="submit-login">Login</button>
@@ -21,7 +21,7 @@
 </div>
 
 <div id="signup-dialog" class="dialog">
-  <form class="dialog-form" action="home.html" method="post">
+  <form class="dialog-form" action="index.php" method="post">
     <input type="text" name="email" placeholder="Your e-mail" />
     <input type="text" name="username" placeholder="Username" />
     <input type="password" name="password" placeholder="Password"/>
