@@ -8,9 +8,11 @@
 			$var_password = $_POST["password"];
 		}
 
+	$request = $_GET['q'];
+
 	require_once('../cfg/sql.php');
 
-	$result = $mydb->query("SELECT COUNT(*) FROM student WHERE username='$var_username' AND password='$var_password'") or die("There is SQL statement error");
+	$result = $mydb->query("SELECT COUNT(*) FROM users WHERE username='$var_username' AND password='$var_password'") or die("There is SQL statement error");
 
 	$i = 0;
 
@@ -24,11 +26,11 @@
 			session_start();
 			$_SESSION['ses_userid'] = session_id();
 			$_SESSION['ses_username'] = $var_username;
-			header('Location: http://localhost:8080/Project220/index.php');
+			header('Location: http://localhost/Project/main.php');
 		}
 		else
 		{
-			header('Location: http://localhost:8080/Project220/loginfail.php');
+			header('Location: http://localhost/Project/index.php?q=error');
 		}
 
 ?>
