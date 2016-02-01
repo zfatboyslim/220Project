@@ -1,51 +1,16 @@
 body{
-  background: url('../images/home/homebg.jpg') top center no-repeat;
+  background-image: url('../images/home/homebg.jpg');
+  max-width: 100%;
+  height: auto;
+  width: auto;
   background-size: cover; /*this is important*/
-  height: 100%;
-  text-align: center;
 }
 
 .jfu{
   margin-top: 20%;
-  text-align: center;
 }
 
 #jfu{
     width: 65%;
     vertical-align: middle;
-}
-
-.btn {
-  padding: 15px;
-}
-
-.btn-label {
-  background: gray;
-  cursor: pointer;
-  margin: auto;
-  width: 300px;
-}
-
-.btn span {
-  cursor: pointer;
-}
-
-.dialog {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  height: 80%;
-  left: 10%;
-  opacity: 0;
-  padding: 30px;
-  position: fixed;
-  top: 10%;
-  transition: opacity 400ms, z-index 0 400ms;
-  width: 80%;
-  z-index: -1000;
-}
-
-.dialog.visible {
-  opacity: 1;
-  transition: opacity 400ms;
-  z-index: 1000;
 }
