@@ -26,7 +26,7 @@
         echo "<div id='cart'>Cart:<font color='#808080'> ".$row[0]."</font></div>";
         echo "</span></a></li>";
         echo "<li class='last'><a><span>";
-        echo "<center><font size='3' color='#808080'> Hello, ".$_SESSION['ses_username']."</font><br>Your Account</center>";
+        echo "<center><font size='3' color='#808080'> Hello, ".$_SESSION['ses_username']."</font><br><div id='myaccount'>Your Account</div></center>";
         echo "</span></a></li>";
       }else{
         require("/../views/loginreg.html");

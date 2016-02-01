@@ -44,14 +44,21 @@
 			while($row = mysqli_fetch_array($result)) {
 			$prod = $row;
 			}
-			echo "<tr><td>".$prod['productName']."</td>";
+			echo "<tr><form action='../controllers/cartupdate.php?productID=".$data[$myrow]['productID']." method='POST'>";
+			echo "<input type='hidden' name='productID' value='".$data[$myrow]['productID']."'>";
+			echo "<td>".$prod['productName']."</td>";
 			echo "<td>".$prod['image']."</td>";
 			echo "<td>".$prod['desc']."</td>";
 			echo "<td>".$prod['price']."</td>";
-			echo "<td>".$data[$myrow]['quantity']."</td>";
-			echo "<td><a href='../controllers/cartdelete.php?productID=".$data[$myrow]['productID']."'>Delete</a></td></tr>";
+			echo "<td>";
+			echo "<input type='text' name='quantity' maxlength='2' size='1' onchange='this.form.submit()' value='".$data[$myrow]['quantity']."'/>";
+			echo "</td>";
+			echo "<td><a href='../controllers/cartdelete.php?productID=".$data[$myrow]['productID']."'>Delete</a></td>";
+			echo "</form></tr>";
 			}
 		}
 		?>	
 	</table>
+	<br>
+	Checkout
 <html>
