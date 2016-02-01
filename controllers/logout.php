@@ -5,5 +5,5 @@
 	$_SESSION['ses_username'] = "";
 	
 	session_destroy();
-	header('Location: http://localhost/project/index.php');
+	header('Location: http://localhost:81/project/home.php');
 ?>

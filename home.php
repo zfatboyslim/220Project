@@ -29,11 +29,13 @@
 	<li><a href='#'><span>Inspiration</span></a></li>
 	<li><a href='#'><span>Health</span></a></li>
 	<li><a href='#'><span>Contact Us</span></a></li>
-<!--<?php
-	//Do not delete
-	//require("controllers/checksession.php");
-?>-->
-	<li class='last'><a href='#'><span>login / register</span></a></li>
+  <li class='last'>
+    <a>
+    	<span>
+      		<?php require("controllers/checksession.php") ?>
+    	</span>
+	</a>
+  </li>
 	<hr>
 </ul>
 		

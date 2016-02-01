@@ -1,34 +1,36 @@
 <?php
-	if(isset($_POST["username"]))
-		{
-			$var_username = $_POST["username"];
-		}
-	if(isset($_POST["password"]))
-		{
-			$var_password = $_POST["password"];
-		}
+  if(isset($_POST["username"]))
+    {
+      $var_username = $_POST["username"];
+    }
+  if(isset($_POST["password"]))
+    {
+      $var_password = $_POST["password"];
+    }
 
-	require_once('../cfg/sql.php');
+  $request = $_GET['q'];
 
-	$result = $mydb->query("SELECT COUNT(*) FROM student WHERE username='$var_username' AND password='$var_password'") or die("There is SQL statement error");
+  require_once('../cfg/sql.php');
 
-	$i = 0;
+  $result = $mydb->query("SELECT COUNT(*) FROM users WHERE username='$var_username' AND password='$var_password'") or die("There is SQL statement error");
 
-	while($row = mysqli_fetch_array($result))
-		{
-			$data[$i++] = $row;
-		}
+  $i = 0;
 
-	if($data[0][0] > 0)
-		{
-			session_start();
-			$_SESSION['ses_userid'] = session_id();
-			$_SESSION['ses_username'] = $var_username;
-			header('Location: http://localhost:8080/Project220/index.php');
-		}
-		else
-		{
-			header('Location: http://localhost:8080/Project220/loginfail.php');
-		}
+  while($row = mysqli_fetch_array($result))
+    {
+      $data[$i++] = $row;
+    }
+
+  if($data[0][0] > 0)
+    {
+      session_start();
+      $_SESSION['ses_userid'] = session_id();
+      $_SESSION['ses_username'] = $var_username;
+      header('Location: http://localhost:81/Project/home.php');
+    }
+    else
+    {
+      header('Location: http://localhost:81/Project/index.php?q=error');
+    }
 
 ?>
