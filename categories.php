@@ -17,7 +17,7 @@
 		</noscript>
 <!--	BREAKBREAKBREAK-->
 	
-	<title>home page</title>
+	<title>categories page</title>
 </head>
 <body>
 	<div id="navbar">
@@ -111,24 +111,12 @@
 	</div>
 <!--END OF PROMOTIONS-->
 <!--BEGINNING OF CATEGORIES-->
+<!--
 <div class="categories">
 	<h2>Categories</h2>
 
-<!--
-	<script>
-  var k = 0;
-
-  function flip() {
-	  var j = document.getElementsByClassName("thumbnail");
-//	  var j = document.getElementById("toflip1");
-    k += 180;
-    j.style.transform = "rotatey(" + k + "deg)";
-    j.style.transitionDuration = "0.5s"
-  }
-</script>
--->
 	<div class="row medium-up-3 large-up-4">
-		<!-- flip div -->
+		 flip div 
 			<div class="column image-flip">
 				<div>
 					<img class="thumbnail" src="http://placehold.it/300x300">
@@ -196,6 +184,7 @@
 	</div>
 	<hr>
 </div>
+-->
 <footer>
 	<p>Copyright © 2012 The Example Company</p>
 	<p>

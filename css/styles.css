@@ -37,9 +37,9 @@
   display: block;
   padding: 15px 25px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
 }
 #navbar ul li.last{
