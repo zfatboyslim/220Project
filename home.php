@@ -210,9 +210,14 @@
 	
 		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">
+		  	var cart = document.getElementById('cart');
+ 			 cart.addEventListener('click', function() {
+    			document.location.href = 'views/cart.php';
+ 			})
+		</script>
 		<script type="text/javascript">	
 			$(function() {
-			
 				var Page = (function() {
 
 					var $nav = $( '#nav-dots > span' ),

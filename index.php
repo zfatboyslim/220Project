@@ -1,3 +1,6 @@
+<?php
+  require_once('controllers/alreadylog.php');
+?>
 <html>
 <head>
     <title>Welcome to 'Just For You Health Magazine'</title>
