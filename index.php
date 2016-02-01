@@ -12,7 +12,7 @@
 </div>
 
 <div id="login-dialog" class="dialog">
-  <form class="dialog-form" action="home.html" method="post">
+  <form class="dialog-form" action="index.php" method="post">
     <input type="text" name="username" placeholder="Username" />
     <input type="password" name="password" placeholder=" Password"/>
     <button type="submit" name="submit-login">Login</button>
@@ -21,7 +21,7 @@
 </div>
 
 <div id="signup-dialog" class="dialog">
-  <form class="dialog-form" action="home.html" method="post">
+  <form class="dialog-form" action="index.php" method="post">
     <input type="text" name="email" placeholder="Your e-mail" />
     <input type="text" name="username" placeholder="Username" />
     <input type="password" name="password" placeholder="Password"/>
@@ -43,7 +43,7 @@
   })
   guest.addEventListener('click', function() {
     // TODO: redirect to home use window.location = url
-    console.log('go to ' + window.location.href + '/home')
+    console.log('go to ' + window.location.href + '/index')
   })
   signup.addEventListener('click', function() {
     signupDialog.className = 'dialog visible'
