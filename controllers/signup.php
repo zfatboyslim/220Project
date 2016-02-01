@@ -10,7 +10,9 @@
 	$address = $_POST["address"];
 	$request = $_GET['q'];
 
-	$mysql_str = "INSERT INTO users(username,password,email,firstname,lastname,phone,address) VALUES ('$username','$password','$email','$firstname','$lastname','$phone','$address')";
+	$md5pass = md5($password);
+
+	$mysql_str = "INSERT INTO users(username,password,email,firstname,lastname,phone,address) VALUES ('$username','$md5pass','$email','$firstname','$lastname','$phone','$address')";
 
 	if(!mysqli_query($mydb, $mysql_str)){
 		echo(mysqli_error());

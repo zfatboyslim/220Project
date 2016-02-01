@@ -8,11 +8,13 @@
       $var_password = $_POST["password"];
     }
 
+  $md5pass = md5($var_password);
+
   $request = $_GET['q'];
 
   require_once('../cfg/sql.php');
 
-  $result = $mydb->query("SELECT COUNT(*) FROM users WHERE username='$var_username' AND password='$var_password'") or die("There is SQL statement error");
+  $result = $mydb->query("SELECT COUNT(*) FROM users WHERE username='$var_username' AND password='$md5pass'") or die("There is SQL statement error");
 
   $i = 0;
 
