@@ -129,26 +129,26 @@
 		<!-- flip div -->
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="images/category/health.png">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="images/category/healthflip.png">
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="images/category/fashion.png">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="images/category/fashionflip.png">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="images/category/food.png">
+				</div>
+				<div>
+					<img class="thumbnail" src="images/category/foodflip.png">
 				</div>
 			</div>
 			<div class="column image-flip">
