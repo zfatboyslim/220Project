@@ -26,11 +26,11 @@
 			session_start();
 			$_SESSION['ses_userid'] = session_id();
 			$_SESSION['ses_username'] = $var_username;
-			header('Location: http://localhost/Project/main.php');
+			header('Location: http://localhost:81/project/main.php');
 		}
 		else
 		{
-			header('Location: http://localhost/Project/index.php?q=error');
+			header('Location: http://localhost:81/project/index.php?q=error');
 		}
 
 ?>
