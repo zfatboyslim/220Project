@@ -43,7 +43,7 @@
   })
   guest.addEventListener('click', function() {
     // TODO: redirect to home use window.location = url
-    console.log('go to ' + window.location.href + '/home')
+    console.log('go to ' + window.location.href + '/index')
   })
   signup.addEventListener('click', function() {
     signupDialog.className = 'dialog visible'
