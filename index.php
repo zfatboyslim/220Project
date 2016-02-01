@@ -14,10 +14,12 @@
     <?php 
      if(isset($_GET['q'])){
         $error = $_GET['q'];
+        $success = $_GET['q'];
        if($error == "error"){
         echo 'Invalid Username or Password';
        }
-       else{
+       if($success == "success"){
+        echo 'Registration Complete';
        }
       }
     ?>
@@ -34,12 +36,15 @@
 </div>
 
 <div id="signup-dialog" class="dialog">
-  <form class="dialog-form" action="home.html" method="post">
-    <input type="text" name="email" placeholder="Your e-mail" />
+  <form class="dialog-form" action="controllers/signup.php" method="post">
     <input type="text" name="username" placeholder="Username" />
     <input type="password" name="password" placeholder="Password"/>
-    <input type="password" name="confirm-password" placeholder="Confirm Password"/>
-    <button type="submit" name="submit-signup">Agree</button>
+    <input type="text" name="email" placeholder="Your e-mail" />
+    <input type="text" name="firstname" placeholder="First Name" />
+    <input type="text" name="lastname" placeholder="Last Name " />
+    <input type="text" name="phone" placeholder="Phone Number" />
+    <input type="text" name="address" placeholder="Address" />
+    <button type="submit" name="submit-signup">Submit</button>
     <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
   </form>
 </div>
