@@ -29,14 +29,8 @@
 	<li><a href='#'><span>Inspiration</span></a></li>
 	<li><a href='#'><span>Health</span></a></li>
 	<li><a href='#'><span>Contact Us</span></a></li>
-  <li class='last'>
   	<!-- If you want to make changes to Register/Login you need to go to file: "views/loginreg.html" and make changes there. -->
-    <a>
-    	<span>
-      		<?php require("controllers/checksession.php") ?>
-    	</span>
-	</a>
-  </li>
+    <?php require("controllers/checksession.php") ?>
 	<hr>
 </ul>
 		
