@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  if(isset($_SESSION['ses_userid'])){
+  $ses_userid = $_SESSION['ses_userid'];
+  }
+  else{
+    $ses_userid = null;
+  }
+  if(isset($_SESSION['ses_username'])){
+  $ses_user = $_SESSION['ses_username'];
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +34,7 @@
 <body>
 	<div id="navbar">
 <ul>
-	<li class='active'><a href='#'><span>About</span></a></li>
+	<li class='active'><a href='home.php'><span>Home</span></a></li>
 	<li><a href='#'><span>Lifestyle</span></a></li>
 	<li><a href='#'><span>Food</span></a></li>
 	<li><a href='#'><span>Style</span></a></li>

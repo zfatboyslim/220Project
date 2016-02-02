@@ -16,14 +16,14 @@
 	$i =0;
 	while($row = mysqli_fetch_array($result)){
 		$data[$i++] = $row;
-		}
+	}
 
 	
 	$result = $mydb->query("SELECT COUNT(*) FROM cart WHERE username='" . $_SESSION['ses_username'] ."'")  or die("There is SQL Statement error");
 	$i =0;
 	while($row = mysqli_fetch_array($result)){
 		$countdata[$i++] = $row;
-		}
+	}
 
 		$totalrecord = $countdata[0][0];
 ?>
@@ -61,4 +61,6 @@
 	</table>
 	<br>
 	Checkout
+	<br>
+	<a href="../home.php">Home</a>
 <html>
