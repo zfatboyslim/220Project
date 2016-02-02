@@ -1,7 +1,9 @@
 #navbar {
   background: #ffffff;
   width: auto;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 	@font-face{
 		font-family:"Lato-Black";
 	}
@@ -32,12 +34,12 @@
   text-align: center;
 }
 #navbar ul li a {
-  color: #000000;
+  color: #5c5c5c;
   text-decoration: none;
   display: block;
   padding: 15px 25px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 18px;
   position: relative;

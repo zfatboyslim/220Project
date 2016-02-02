@@ -35,12 +35,11 @@
 	<div id="navbar">
 <ul>
 	<li class='active'><a href='home.php'><span>Home</span></a></li>
-	<li><a href='#'><span>Lifestyle</span></a></li>
-	<li><a href='#'><span>Food</span></a></li>
-	<li><a href='#'><span>Style</span></a></li>
-	<li><a href='#'><span>Inspiration</span></a></li>
+	<li><a href='#'><span>Products</span></a></li>
+	<li><a href='#'><span>Fashion</span></a></li>
 	<li><a href='#'><span>Health</span></a></li>
-	<li><a href='#'><span>Contact Us</span></a></li>
+	<li><a href='#'><span>Fitness</span></a></li>
+	<li><a href='#'><span>Food</span></a></li>
   	<!-- If you want to make changes to Register/Login you need to go to file: "views/loginreg.html" and make changes there. -->
     <?php require("controllers/checksession.php") ?>
 	<hr>
