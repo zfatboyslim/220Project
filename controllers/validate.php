@@ -12,11 +12,7 @@
 
   $request = $_GET['q'];
 
-<<<<<<< HEAD
   require_once($_SERVER['DOCUMENT_ROOT'].'/project/cfg/sql.php');
-=======
-  require_once($_SERVER['DOCUMENT_ROOT'].'project/cfg/sql.php');
->>>>>>> 478d37c2aacb4d991cd87b167df464827f9731a3
 
   $result = $mydb->query("SELECT COUNT(*) FROM users WHERE username='$var_username' AND password='$md5pass'") or die("There is SQL statement error");
 
