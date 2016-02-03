@@ -10,7 +10,7 @@
   $ses_user = $_SESSION['ses_username'];
   }
 
-    require_once('/../cfg/sql.php');
+    require_once($_SERVER['DOCUMENT_ROOT'].'/project/cfg/sql.php');
 
 	$result = mysqli_query($mydb,"SELECT * FROM users WHERE username='" . $_SESSION['ses_username'] ."'") 
 	or die("Error: ".mysqli_error($mydb));

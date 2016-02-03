@@ -3,7 +3,7 @@
 	if(isset($_SESSION['ses_username'])){
 	$ses_user = $_SESSION['ses_username'];
 	}
-  	require_once('../cfg/sql.php');
+  	require_once($_SERVER['DOCUMENT_ROOT'].'project/cfg/sql.php');
 	$myid = $_GET['productID'];
 	$quan = $_GET['quantity'];
 	
