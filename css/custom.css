@@ -7,7 +7,7 @@
 }
 
 .demo-2 .sl-slider-wrapper {
-	width: 1000px;
+	width: 75%;
 	height: 550px;
 	overflow: hidden;
 	position: relative;
@@ -17,8 +17,7 @@
 .demo-2 .sl-slider blockquote {
 	padding: 100px 30px 10px 30px;
 	width: 80%;
-	max-width: 960px;
-	color: #fff;
+	max-width: 960px;	color: #fff;
 	margin: 0 auto;
 	position: relative;
 	z-index: 100;

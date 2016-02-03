@@ -1,5 +1,5 @@
 <?php
-	require_once('../cfg/sql.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/project/cfg/sql.php');
 
 	$username = $_POST["username"];
 	$password = $_POST["password"];
