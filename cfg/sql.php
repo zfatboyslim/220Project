@@ -1,8 +1,8 @@
 <?php
-		$hostname= "sql6.freemysqlhosting.net";
-		$username = "sql6104496";
-		$password = "GHwp9t2RyM";
-		$dbname = "sql6104496";
+		$hostname= "irexjr.ddns.net:3306";
+		$username = "rexjr";
+		$password = "abc";
+		$dbname = "cartweb";
 
 		$mydb = mysqli_connect($hostname,$username,$password,$dbname) or die("There is Database connection error");
 ?>
