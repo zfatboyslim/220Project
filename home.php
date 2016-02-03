@@ -35,15 +35,17 @@
 	<div id="navbar">
 <ul>
 	<li class='active'><a href='home.php'><span>Home</span></a></li>
-	<li><a href='#'><span>Products</span></a></li>
-	<li><a href='#'><span>Fashion</span></a></li>
-	<li><a href='#'><span>Health</span></a></li>
+	<li><a href='#'><a href="#categories">Products</span></a></li>
+	<li><a href='#'><span>About Us</span></a></li>
+	<li><a href='#'><span>Contact Us</span></a></li>
+<!--
 	<li><a href='#'><span>Fitness</span></a></li>
 	<li><a href='#'><span>Food</span></a></li>
+-->
   	<!-- If you want to make changes to Register/Login you need to go to file: "views/loginreg.html" and make changes there. -->
     <?php require("controllers/checksession.php") ?>
 	<hr>
-</ul>
+		</ul>
 		
 </div>
 	<!--BREAKBREAKBREAKBREAK-->
@@ -121,6 +123,7 @@
 <!--BEGINNING OF CATEGORIES-->
 <div class="categories">
 	<h2>Categories</h2>
+	<a name="categories"></a>
 
 <!--
 	<script>
@@ -139,66 +142,66 @@
 		<!-- flip div -->
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+				<a href="products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+				<a href="products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/fashion.jpg">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/fashion.jpg">
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/news.jpg">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
-				</div>
-				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/news.jpg">
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/music.jpg">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/music.jpg">
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/teen.jpg">
 				</div>
 				<div>
-					<img class="thumbnail" src="http://placehold.it/300x300">
+					<img class="thumbnail" src="../project/images/teen.jpg">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="../project/images/homegarden.jpg">
+				</div>
+				<div>
+					<img class="thumbnail" src="../project/images/homegarden.jpg">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="../project/images/sports.jpg">
+				</div>
+				<div>
+					<img class="thumbnail" src="../project/images/sports.jpg">
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<img class="thumbnail" src="../project/images/lifestyle.jpg">
+				</div>
+				<div>
+					<img class="thumbnail" src="../project/images/lifestyle.jpg">
 				</div>
 			</div>
 	</div>
