@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  if(isset($_SESSION['ses_userid'])){
+  $ses_userid = $_SESSION['ses_userid'];
+  }
+  else{
+    $ses_userid = null;
+  }
+  if(isset($_SESSION['ses_username'])){
+  $ses_user = $_SESSION['ses_username'];
+  }
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,6 +48,7 @@
                      <li><a href="../project/products.php">PRODUCTS</a></li>
                      <li><a href="#course-sec">ABOUT</a></li>
                      <li><a href="#contact-sec">CONTACT</a></li>
+					<?php require("controllers/checksession.php") ?>
                 </ul>
             </div>
            
@@ -182,66 +195,66 @@
 		<!-- flip div -->
 			<div class="column image-flip" align="center">
 				<div>
-				<a href="/products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
+				<a href="../project/products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
 				</div>
 				<div>
-				<a href="/products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/fashion.jpg"></a>
-				</div>
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/fashion.jpg"></a>
+				<a href="../project/products.php"><img class="thumbnail" src="../project/images/men.jpg"></a>
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/news.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/fashion.jpg"></a>
 				</div>
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/news.jpg"></a>
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/music.jpg"></a>
-				</div>
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/music.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/fashion.jpg"></a>
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/teen.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/news.jpg"></a>
 				</div>
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/teen.jpg"></a>
-				</div>
-			</div>
-			<div class="column image-flip">
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/homegarden.jpg"></a>
-				</div>
-				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/homegarden.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/news.jpg"></a>
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/sports.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/music.jpg"></a>
 				</div>
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/sports.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/music.jpg"></a>
 				</div>
 			</div>
 			<div class="column image-flip">
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/lifestyle.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/teen.jpg"></a>
 				</div>
 				<div>
-					<a href="/products.php"><img class="thumbnail" src="../project/images/lifestyle.jpg"></a>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/teen.jpg"></a>
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/homegarden.jpg"></a>
+				</div>
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/homegarden.jpg"></a>
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/sports.jpg"></a>
+				</div>
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/sports.jpg"></a>
+				</div>
+			</div>
+			<div class="column image-flip">
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/lifestyle.jpg"></a>
+				</div>
+				<div>
+					<a href="../project/products.php"><img class="thumbnail" src="../project/images/lifestyle.jpg"></a>
 				</div>
 				</div>
 			</div>
@@ -353,6 +366,16 @@
 	<script type="text/javascript" src="js/jsjs/jquery.flip.js"></script>
 
 	<script type="text/javascript" src="js/jsjs/app.js"></script>
+<script type="text/javascript">
+		  	var cart = document.getElementById('cart'),
+		  		myaccount = document.getElementById('myaccount');
+ 			 cart.addEventListener('click', function() {
+    			document.location.href = 'views/cart.php';
+ 			})
+ 			 myaccount.addEventListener('click', function() {
+    			document.location.href = 'views/account.php';
+ 			})
+		</script>
 	
 </body>
 </html>

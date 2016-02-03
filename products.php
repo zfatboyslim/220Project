@@ -11,212 +11,320 @@
   }
 ?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    
-	<link rel="stylesheet" href="css/styles.css">
-	
-<!--	BREAKBREAKBREAK-->
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/foundation.css" />
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Stam Mags</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link rel="stylesheet" type="text/css" href="css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
-	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-		<noscript>
-			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
-		</noscript>
-<!--	BREAKBREAKBREAK-->
-	
-	<title>products page</title>
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="assets/css/flexslider.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />    
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 </head>
-<body>
-	<div id="navbar">
-<ul>
-	<li class='active'><a href='home.php'><span>Home</span></a></li>
-	<li><a href='#'><a href="#categories"><span>Products</span></a></li>
-	<li><a href='#'><span>About Us</span></a></li>
-	<li><a href='#'><span>Contact Us</span></a></li>
-
-  	<!-- If you want to make changes to Register/Login you need to go to file: "views/loginreg.html" and make changes there. -->
-    <?php require("controllers/checksession.php") ?>
-	<hr>
-		</ul>
-		
-</div>
-	<!--BREAKBREAKBREAKBREAK-->
-<div class="container demo-2">
-		
-            <div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-<!--
-							<h2>A bene placito.</h2>
-							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
--->
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-<!--							<h2>Regula aurea.</h2>-->
-<!--							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>-->
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-<!--							<h2>Dum spiro, spero.</h2>-->
-<!--							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>-->
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-4"></div>
-<!--							<h2>Donna nobis pacem.</h2>-->
-<!--							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>-->
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-5"></div>
-<!--							<h2>Acta Non Verba.</h2>-->
-<!--							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>-->
-						</div>
-					</div>
-				</div><!-- /sl-slider -->
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-	</div>
-<!--BREAKBREAKBREAKBREAK-->
+<body >
+   
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo-custom" src="img/logo.png" alt=""  /></a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="../project/home3.php">HOME</a></li>
+                     <li><a href="../project/products.php">PRODUCTS</a></li>
+                     <li><a href="#course-sec">ABOUT</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+					<?php require("controllers/checksession.php") ?>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+           
+               <div class="col-lg-12  col-md-12 col-sm-12">
+               
+                <div class="flexslider set-flexi" id="main-section" >
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <img class="sliderimg" src="images/slider1.jpg">
+                            <a  href="#categories" class="btn btn-info btn-lg" >
+                                Categories 
+                            </a>
+                             <a  href="#promotions" class="btn btn-success btn-lg" >
+                                Promotions
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+                        
+                        <!-- Slider 02 -->
+                        <li>               
+							<img src="images/slider3.jpg">
+                             <a  href="#categories" class="btn btn-primary btn-lg" >
+                               Categories 
+                            </a>
+                             <a  href="#promotions" class="btn btn-danger btn-lg" >
+                                Promotions
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+                        
+                        <!-- Slider 03 -->
+                        <li>
+                            <img src="images/slider2.jpg">
+                             <a  href="#categories" class="btn btn-default btn-lg" >
+                                Categories 
+                            </a>
+                             <a  href="#promotions" class="btn btn-info btn-lg" >
+                                Promotions
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+		</div>
+			</div>
+	    		</div>
+        			</div>
+        				</div>
+        					</div>
+       <!--HOME SECTION END-->   
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+           
+               <div class="col-lg-12  col-md-12 col-sm-12">
+               
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" >WELCOME TO STAMFORD MAGAZINES PRODUCTS PAGE </h2>
+                   </div>
+               </div>
+             </div>
+        
+    </div>
 	
 <!--BEGINNING OF CATEGORIES-->
+	<div id="promotions" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">PRODUCTS</h1>
+                 </div>
+
+             </div>
 <div class="products">
-	<h2>Products</h2>
-	<table>
+	<table align="center">
 		<tr><a name="men"></a>
 			<td><img class="thumbnail" src="../project/images/men.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/men1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/men2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/men3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="fashion"></a>
 			<td><img class="thumbnail" src="../project/images/fashion.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/fashion1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/fashion2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/fashion3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="news"></a>
 			<td><img class="thumbnail" src="../project/images/news.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/news1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/news2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/news3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="music"></a>
 			<td><img class="thumbnail" src="../project/images/music.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/music1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/music2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/music3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="teen"></a>
 			<td><img class="thumbnail" src="../project/images/teen.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/teen1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/teen2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/teen3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="home"></a>
 			<td><img class="thumbnail" src="../project/images/homegarden.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/home1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/home2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/home3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="sports"></a>
 			<td><img class="thumbnail" src="../project/images/sports.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/sports1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/sports2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/sports3.jpg"></td>
 		</tr>
-		<tr><a name="men"></a>
+		<tr>
+			<td></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><input type="button" value="Add To Cart"></td>
+		</tr>
+		<tr><a name="lifestyle"></a>
 			<td><img class="thumbnail" src="../project/images/lifestyle.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/life1.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/life2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/life3.jpg"></td>
 		</tr>
 	</table>
-<!--	<a name="categories"></a>-->
-<!--
-	<div class="row medium-up-3 large-up-4">
-		 flip div 
-		<div>
-				<div>
-					<img class="thumbnail" src="../project/images/men.jpg">
-				</div>
-			<div>
-					<img class="thumbnail" src="../project/images/men.jpg">
-				</div>
-			
-		</div>
-				<div>
-					<img class="thumbnail" src="../project/images/fashion.jpg">
-				</div>
-				
-				<div>
-					<img class="thumbnail" src="../project/images/news.jpg">
-				</div>
-				<div>
-					<img class="thumbnail" src="../project/images/music.jpg">
-				</div>
-				<div>
-					<img class="thumbnail" src="../project/images/teen.jpg">
-				</div>
-				<div>
-					<img class="thumbnail" src="../project/images/homegarden.jpg">
-				</div>
-				<div>
-					<img class="thumbnail" src="../project/images/sports.jpg">
-				</div>
-				<div>
-					<img class="thumbnail" src="../project/images/lifestyle.jpg">
-				</div>
-	</div>
--->
 	<hr>
-</div>
-<footer>
-	<p>Copyright © 2012 The Example Company</p>
-	<p>
-		<a href="about.html">About</a> -
-		<a href="policy.html">Privacy Policy</a> -
-		<a href="contact.html">Contact Us</a>
-	</p>
-</footer>
+</div> <!-- COURSES SECTION END-->
+    <div id="contact-sec"   >
+           <div class="overlay">
+ <div class="container set-pad">
+      <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         </p>
+                 </div>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!--<script src="js/flip.js"></script>-->
-	<script type="text/javascript" src="js/jsjs/jquery.min.js"></script>
+             </div>
+             <!--/.HEADER LINE END-->
+           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+           
+               
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control "  required="required" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control " required="required"  placeholder="Your Email" />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info btn-block btn-lg">SUBMIT REQUEST</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                   
+     
+              
+              
+                
+               </div>
+                </div>
+          </div> 
+       </div>
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div>
+                        <h4>234/80 -UFG , New Street,</h4>
+                        <h4>Switzerland.</h4>
+                        <h4><strong>Call:</strong>  + 67-098-907-1269 / 70 / 71 </h4>
+                        <h4><strong>Email: </strong>info@yourdomain.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Social Conectivity </strong></h2>
+        <hr />
+                    <div >
+                        <a href="http://www.facebook.com">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
+                     <a href="http://www.plus.google.com"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
+                     <a href="http://twitter.com/share"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+                    </div>
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+    <div id="footer">
+          &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+    </div>
+     <!-- FOOTER SECTION END-->
+   
+    <!--  Jquery Core Script -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts --> 
+         <script src="assets/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts --> 
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts --> 
+         <script src="assets/js/custom.js"></script>
+	</script>
+<!--		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+<script src="js/flip.js"></script>
+<!--	<script type="text/javascript" src="js/jsjs/jquery.min.js"></script>-->
 	<script type="text/javascript" src="js/jsjs/foundation.js"></script>
 	<script type="text/javascript" src="js/jsjs/jquery.flip.js"></script>
-	
-		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-		<script type="text/javascript">
+
+	<script type="text/javascript" src="js/jsjs/app.js"></script>
+<script type="text/javascript">
 		  	var cart = document.getElementById('cart'),
 		  		myaccount = document.getElementById('myaccount');
  			 cart.addEventListener('click', function() {
@@ -226,72 +334,6 @@
     			document.location.href = 'views/account.php';
  			})
 		</script>
-		<script type="text/javascript">	
-			$(function() {
-				var Page = (function() {
-
-					var $nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-			
-			});
-		</script>
-	<script type="text/javascript" src="js/jsjs/app.js"></script>
-	</body>
+	
+</body>
 </html>
