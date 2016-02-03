@@ -37,16 +37,32 @@
 
 <div id="signup-dialog" class="dialog">
   <form class="dialog-form" action="controllers/signup.php" method="post">
-    <input type="text" name="username" placeholder="Username" />
-    <input type="text" name="password" placeholder="Password" />
-    <input type="text" name="email" placeholder="Email"/>
-    <input type="text" name="firstname" placeholder="First Name"/>
-    <input type="text" name="lastname" placeholder="Last Name"/>
-    <input type="text" name="phone" placeholder="Phone Number"/>
-    <input type="text" name="address" placeholder="Address"/>
+    <input type="text" id="usernameform" name="username" placeholder="Username" required />
+   
+
+    <input type="text" id="passwordform" name="password" placeholder="Password" minlength="6" required  />
+ 
+
+    <input type="text" id="emailform" name="email" placeholder="Email" required />
+
+
+    <input type="text" id="fnameform" name="firstname" placeholder="First Name" required />
+  
+
+    <input type="text" id="lnameform" name="lastname" placeholder="Last Name" required />
+ 
+
+    <input type="text" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
+
+
+    <input type="text" name="address" placeholder="Address" required />
+  
+
     <button type="submit" name="submit-signup">Agree</button>
     <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
   </form>
+</div>
+   <script src="js/app.js"></script>
 </div>
 
 <script type="text/javascript">
@@ -71,6 +87,8 @@
     loginDialog.className = 'dialog'
     signupDialog.className = 'dialog'
   }
+
+
 </script>
 </body>
 </html>
