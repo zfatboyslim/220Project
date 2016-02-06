@@ -46,7 +46,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a href="../project/home3.php">HOME</a></li>
                      <li><a href="../project/products.php">PRODUCTS</a></li>
-                     <li><a href="#course-sec">ABOUT</a></li>
                      <li><a href="#contact-sec">CONTACT</a></li>
 					<?php require("controllers/checksession.php") ?>
                 </ul>
@@ -138,9 +137,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+			<td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="1"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="2"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="3"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="fashion"></a>
 			<td><img class="thumbnail" src="../project/images/fashion.jpg"></td>
@@ -150,9 +149,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="4"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="5"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="6"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="news"></a>
 			<td><img class="thumbnail" src="../project/images/news.jpg"></td>
@@ -162,9 +161,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="7"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="8"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="9"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="music"></a>
 			<td><img class="thumbnail" src="../project/images/music.jpg"></td>
@@ -174,9 +173,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="10"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="11"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="12"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="teen"></a>
 			<td><img class="thumbnail" src="../project/images/teen.jpg"></td>
@@ -186,9 +185,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="13"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="14"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="15"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="home"></a>
 			<td><img class="thumbnail" src="../project/images/homegarden.jpg"></td>
@@ -198,9 +197,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="16"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="17"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="18"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="sports"></a>
 			<td><img class="thumbnail" src="../project/images/sports.jpg"></td>
@@ -210,9 +209,9 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
-			<td align="center"><input type="button" value="Add To Cart"></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="19"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="20"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="21"><input type="submit" value="Subscribe"></form></td>
 		</tr>
 		<tr><a name="lifestyle"></a>
 			<td><img class="thumbnail" src="../project/images/lifestyle.jpg"></td>
@@ -220,6 +219,12 @@
 			<td><img class="thumbnail" src="../project/images/mags/life2.jpg"></td>
 			<td><img class="thumbnail" src="../project/images/mags/life3.jpg"></td>
 		</tr>
+        <tr>
+            <td></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="22"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="23"><input type="submit" value="Subscribe"></form></td>
+            <td align="center"><form action="controllers/addcart.php" method="POST"><input type="hidden" name="prodID" value="24"><input type="submit" value="Subscribe"></form></td>
+        </tr>
 	</table>
 	<hr>
 </div> <!-- COURSES SECTION END-->
@@ -325,14 +330,18 @@
 
 	<script type="text/javascript" src="js/jsjs/app.js"></script>
 <script type="text/javascript">
-		  	var cart = document.getElementById('cart'),
-		  		myaccount = document.getElementById('myaccount');
- 			 cart.addEventListener('click', function() {
-    			document.location.href = 'views/cart.php';
- 			})
- 			 myaccount.addEventListener('click', function() {
-    			document.location.href = 'views/account.php';
- 			})
+        var cart = document.getElementById('cart'),
+          logout = document.getElementById('logout'),
+          myaccount = document.getElementById('myaccount');
+       cart.addEventListener('click', function() {
+          document.location.href = 'views/cart.php';
+      })
+       myaccount.addEventListener('click', function() {
+          document.location.href = 'views/account.php';
+      })
+         logout.addEventListener('click', function() {
+          document.location.href = 'controllers/logout.php';
+      })
 		</script>
 	
 </body>

@@ -7,7 +7,7 @@
         $row = $result->fetch_row();
 
         echo "<li class='last'><a><span>";
-        echo "<form action='controllers/logout.php' action='post'><button type='submit'>LOGOUT</button></form>";
+        echo "<div id='logout'>LOGOUT</div>";
         echo "</span></a></li>";
         echo "<li class='last'><a><span>";
         echo "<div id='cart'>Cart:<font color='#808080'> ".$row[0]."</font></div>";

@@ -21,7 +21,7 @@
   while($row = mysqli_fetch_array($result))
     {
       $data[$i++] = $row;
-   n
+   }
 
   if($data[0][0] > 0)
     {

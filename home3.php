@@ -46,7 +46,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a href="../project/home3.php">HOME</a></li>
                      <li><a href="../project/products.php">PRODUCTS</a></li>
-                     <li><a href="#course-sec">ABOUT</a></li>
                      <li><a href="#contact-sec">CONTACT</a></li>
 					<?php require("controllers/checksession.php") ?>
                 </ul>
@@ -367,14 +366,18 @@
 
 	<script type="text/javascript" src="js/jsjs/app.js"></script>
 <script type="text/javascript">
-		  	var cart = document.getElementById('cart'),
-		  		myaccount = document.getElementById('myaccount');
- 			 cart.addEventListener('click', function() {
-    			document.location.href = 'views/cart.php';
- 			})
- 			 myaccount.addEventListener('click', function() {
-    			document.location.href = 'views/account.php';
- 			})
+        var cart = document.getElementById('cart'),
+          logout = document.getElementById('logout'),
+          myaccount = document.getElementById('myaccount');
+       cart.addEventListener('click', function() {
+          document.location.href = 'views/cart.php';
+      })
+       myaccount.addEventListener('click', function() {
+          document.location.href = 'views/account.php';
+      })
+         logout.addEventListener('click', function() {
+          document.location.href = 'controllers/logout.php';
+      })
 		</script>
 	
 </body>
