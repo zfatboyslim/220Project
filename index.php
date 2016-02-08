@@ -1,18 +1,19 @@
-<?php
-  require_once('controllers/alreadylog.php');
-?>
+
 <html>
 <head>
-    <title>Welcome to 'Just For You Health Magazine'</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Stamford Health Magazine Center</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="jfu">
-    <img id="jfu" src="images/home/JustForYou.png"/>
+    <div class="headContent">
+      <h1>Stamford Health Magazine Center</h1>
+    </div>
     <div class="btn btn-label" id="login">LOG IN</div>
     <div class="btn btn-label" id="guest">Continue as guest</div>
     <div class="btn"><span id="signup">Sign up for member</span></div>
-    <?php 
+    <?php
      if(isset($_GET['q'])){
         $error = $_GET['q'];
         $success = $_GET['q'];
@@ -28,43 +29,31 @@
 
 <div id="login-dialog" class="dialog">
   <form class="dialog-form" action="controllers/validate.php" method="post">
-    <input type="text" name="username" placeholder="Username" />
-    <input type="password" name="password" placeholder=" Password"/>
-    <button type="submit" name="submit-login">Login</button>
-    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
+    <h1 style="color: black">LOGIN</h1>
+    <input type="text" name="username" placeholder="Username" id="dinput"/>
+    <input type="password" name="password" placeholder=" Password" id="dinput"/>
+    <button type="submit" name="submit-login" class="dbutton">Login</button>
+    <button type="reset" name="reset" class="dbutton" onclick="clearDialog()">Cancel</button>
   </form>
 </div>
 
 <div id="signup-dialog" class="dialog">
   <form class="dialog-form" action="controllers/signup.php" method="post">
-    <input type="text" id="usernameform" name="username" placeholder="Username" required />
-   
-
-    <input type="text" id="passwordform" name="password" placeholder="Password" minlength="6" required  />
- 
-
-    <input type="text" id="emailform" name="email" placeholder="Email" required />
-
-
-    <input type="text" id="fnameform" name="firstname" placeholder="First Name" required />
-  
-
-    <input type="text" id="lnameform" name="lastname" placeholder="Last Name" required />
- 
-
-    <input type="text" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
-
-
-    <input type="text" name="address" placeholder="Address" required />
-  
-
-    <button type="submit" name="submit-signup">Agree</button>
-    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
+    <h1 style="color: black">SIGN UP</h1>
+    <input type="text" name="username" placeholder="Username" id="dinput" />
+    <input type="text" name="password" placeholder="Password" id="dinput"/>
+    <input type="text" name="email" placeholder="Email" id="dinput"/>
+    <input type="text" name="firstname" placeholder="First Name" id="dinput"/>
+    <input type="text" name="lastname" placeholder="Last Name" id="dinput"/>
+    <input type="text" name="phone" placeholder="Phone Number" id="dinput"/>
+    <input type="text" name="address" placeholder="Address" id="dinput"/>
+    <button type="submit" name="submit-signup" class="dbutton">Agree</button>
+    <button type="reset" name="reset" onclick="clearDialog()" class="dbutton">Cancel</button>
   </form>
 </div>
-   <script src="js/app.js"></script>
-</div>
 
+
+<script type="text/javascript" src="js/jsjs/foundation.js"></script>
 <script type="text/javascript">
   var login = document.getElementById('login'),
       guest = document.getElementById('guest'),
@@ -78,7 +67,7 @@
   guest.addEventListener('click', function() {
     // TODO: redirect to home use window.location = url
     //console.log('go to ' + window.location.href + '/index')
-    document.location.href = 'home.php';
+    document.location.href = 'home3.php';
   })
   signup.addEventListener('click', function() {
     signupDialog.className = 'dialog visible'
@@ -87,8 +76,6 @@
     loginDialog.className = 'dialog'
     signupDialog.className = 'dialog'
   }
-
-
 </script>
 </body>
 </html>
