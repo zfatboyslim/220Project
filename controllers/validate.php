@@ -28,7 +28,7 @@
       session_start();
       $_SESSION['ses_userid'] = session_id();
       $_SESSION['ses_username'] = $var_username;
-      header('Location: http://localhost:81/Project/home.php');
+      header('Location: http://localhost:81/Project/home3.php');
     }
     else
     {

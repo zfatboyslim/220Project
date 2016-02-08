@@ -32,6 +32,6 @@
 		?>
 		<input type="button" value="Change User Details">
 		<br>
-		<a href="../home.php">Home</a>
+		<a href="../home3.php">Home</a>
 	</center>
 </html>
