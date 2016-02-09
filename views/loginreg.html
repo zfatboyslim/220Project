@@ -1,2 +1,14 @@
-	<li class='last'><a href='#'><span>Register</span></a></li>
-	<li class='last'><a href='#'><span>Login</span></a></li>
+<li class='last'><div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+  	<center>
+	  	<form action="../project/controllers/validatehome.php" method="POST">
+   	 	<input type="text" name="username" placeholder="Username"/>
+    	<input type="password" name="password" placeholder=" Password"/>
+	  		<input type="submit" value="Login">
+	  	</form>
+	    <li><span id="signup"><a href="#">Register</a></span></li>
+	</center>
+  </ul>
+</div></li>

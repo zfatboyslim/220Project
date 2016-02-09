@@ -52,7 +52,21 @@
             </div>
            
         </div>
-    </div>
+  </div>
+<div id="signup-dialog" class="dialog">
+  <form class="dialog-form" action="controllers/signup.php" method="post">
+    <h1 style="color: black">SIGN UP</h1>
+    <input type="text" class="dinput" id="usernameform" name="username" placeholder="Username" required />
+    <input type="text" class="dinput" id="passwordform" name="password" placeholder="Password" minlength="6" required  />
+    <input type="text" class="dinput" id="emailform" name="email" placeholder="Email" required />
+    <input type="text" class="dinput" id="fnameform" name="firstname" placeholder="First Name" required />
+    <input type="text" class="dinput" id="lnameform" name="lastname" placeholder="Last Name" required />
+    <input type="text" class="dinput" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
+    <input type="text" class="dinput" name="address" placeholder="Address" required />
+    <button type="submit" name="submit-signup">Agree</button>
+    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
+  </form>
+</div>
       <!--NAVBAR SECTION END-->
        <div class="home-sec" id="home" >
            <div class="overlay">
@@ -365,6 +379,17 @@
 	<script type="text/javascript" src="js/jsjs/jquery.flip.js"></script>
 
 	<script type="text/javascript" src="js/jsjs/app.js"></script>
+<script type="text/javascript">
+  var signup = document.getElementById('signup'),
+      signupDialog = document.getElementById('signup-dialog')
+
+  signup.addEventListener('click', function() {
+    signupDialog.className = 'dialog visible'
+  })
+  function clearDialog() {
+    signupDialog.className = 'dialog'
+  }
+</script>
 <script type="text/javascript">
         var cart = document.getElementById('cart'),
           logout = document.getElementById('logout'),
