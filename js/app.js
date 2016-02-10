@@ -17,7 +17,7 @@ $(function(){
 				$("#head_tagline").height(320);
 				$("#head_tagline>p:last").fadeIn(700);
 			});
-			
+
 			$("#head_tagline>a:last").on("click",function(){
 				$("#head_tagline>p:last").hide();
 				$("#head_tagline").height(200);
@@ -30,15 +30,8 @@ $(function(){
 				}
 				else{
 					$(".error:first").hide();
-				};					
+				};
 			});
-
-
-
-});
-
-
-
 		}
 
 	};

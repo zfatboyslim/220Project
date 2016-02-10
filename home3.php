@@ -42,13 +42,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img class="logo-custom" src="img/logo.png" alt=""  /></a>
+        <a class="navbar-brand" href="../project/home3.php"><img class="logo-custom" src="img/logo.png" alt=""  /></a>
     </div>
     <div class="navbar-collapse collapse move-me">
       <ul class="nav navbar-nav navbar-right">
         <li ><a href="../project/home3.php">HOME</a></li>
         <li><a href="../project/products.php">PRODUCTS</a></li>
         <li><a href="#contact-sec">CONTACT</a></li>
+        <li><a href="../project/myaccount.html">My Account</a></li>
 					<?php require("controllers/checksession.php") ?>
       </ul>
     </div>
