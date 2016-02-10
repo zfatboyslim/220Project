@@ -30,10 +30,10 @@ body {
     border-color: transparent;
 }
 
-    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
-        color: #FFF;
-        padding: 22px 10px;
-    }
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #FFF;
+    padding: 22px 10px;
+}
 
 .home-sec {
     padding-top: 10px;
@@ -45,23 +45,23 @@ body {
     color: #fff;
     background-attachment: fixed;
 }
-    .home-sec .overlay {
-        background: rgba(237, 145, 33, 0.89);
-        min-height: 500px;
-    }
-    .home-sec h1 {
-        color: #fff;
-        font-weight: 900;
-        font-size: 50px;
-        text-transform: uppercase;
-        padding-bottom: 35px;
-    }
 
-    .home-sec h3 {
-        text-transform: uppercase;
-    }
+.home-sec .overlay {
+    background: #E8EAF6;
+    min-height: 500px;
+}
 
+.home-sec h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
 
+.home-sec h3 {
+    text-transform: uppercase;
+  }
 
 .set-flexi {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
@@ -86,17 +86,19 @@ body {
     color: #000;
 }
 
-    .tag-line h2 {
-        font-size: 20px;
-        font-weight: 900;
-        padding: 5px 10px 10px 5px;
-        color: #005E5A;
-    }
+.tag-line h2 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px 10px 5px;
+    color:rgba(28, 43, 75, 1);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 9px;
+}
 
-        .tag-line h2 > i {
-            margin-left: 8px;
-            margin-right: 8px;
-        }
+.tag-line h2 > i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
 
 .header-line {
     font-weight: 900;
@@ -113,7 +115,6 @@ h1::after {
     width: 200px;
     margin: 12px auto;
 }
-
 
 .about-div {
     padding: 30px;
@@ -134,15 +135,15 @@ h1::after {
     transition: 0.3s;
 }
 
-    .icon-round-border:hover {
-        color: #fff;
-        border: 10px double #fff;
-        background-color: #1A94C4;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-    }
+.icon-round-border:hover {
+    color: #fff;
+    border: 10px double #fff;
+    background-color: #1A94C4;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 
 .about-div hr {
     border: 1px solid #1A94C4;
@@ -170,36 +171,37 @@ h1::after {
     color: #fff;
 }
 
-    #faculty-sec .header-line {
-        color: #fff;
-    }
+#faculty-sec .header-line {
+    color: #fff;
+}
+
 .faculty-div h4 {
     line-height:30px;
     font-weight:700;
 }
+
 .faculty-div {
     padding: 30px;
 }
 
-    .faculty-div hr {
-        border: 1px solid #1A94C4;
-    }
+.faculty-div hr {
+    border: 1px solid #1A94C4;
+}
 
-    .faculty-div h3 {
-        font-size: 25px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.faculty-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-    .faculty-div p {
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
+.faculty-div p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
 
-    .faculty-div img {
-        border: 10px double #fff;
-    }
-
+.faculty-div img {
+    border: 10px double #fff;
+}
 
 #contact-sec {
     padding-top: 10px;
@@ -213,13 +215,14 @@ h1::after {
 }
 
 #contact-sec .overlay {
-        background: rgba(0, 0, 0, 0.76);
-        min-height: 600px;
-    }
+    background: rgba(0, 0, 0, 0.76);
+    min-height: 600px;
+}
 
-    #contact-sec h1 {
-        color:#fff;
-    }
+#contact-sec h1 {
+    color:#fff;
+}
+
 #contact-sec .form-control{
     background-color:rgba(255, 255, 255, 0);
     color:#fff;
