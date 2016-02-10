@@ -59,7 +59,7 @@
 <!--Hidden Sign up Dialog-->
 <div id="signup-dialog" class="dialog">
   <form class="dialog-form" action="controllers/signup.php" method="post">
-    <h1 style="color: black">SIGN UP</h1>
+    <center><h1 style="color: black">SIGN UP</h1>
     <input type="text" class="dinput" id="usernameform" name="username" placeholder="Username" required />
     <input type="text" class="dinput" id="passwordform" name="password" placeholder="Password" minlength="6" required  />
     <input type="text" class="dinput" id="emailform" name="email" placeholder="Email" required />
@@ -67,8 +67,9 @@
     <input type="text" class="dinput" id="lnameform" name="lastname" placeholder="Last Name" required />
     <input type="text" class="dinput" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
     <input type="text" class="dinput" name="address" placeholder="Address" required />
-    <button type="submit" name="submit-signup">Agree</button>
-    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
+    <button type="submit" class="dbutton" name="submit-signup">Agree</button>
+    <button type="reset" class="dbutton" name="reset" onclick="clearDialog()">Cancel</button>
+    </center>
   </form>
 </div>
 

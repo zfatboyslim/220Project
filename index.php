@@ -47,36 +47,14 @@
     <input type="text" class="dinput" id="lnameform" name="lastname" placeholder="Last Name" required />
     <input type="text" class="dinput" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
     <input type="text" class="dinput" name="address" placeholder="Address" required />
-    <button type="submit" name="submit-signup">Agree</button>
-    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
+    <button type="submit" class="dbutton" name="submit-signup">Agree</button>
+    <button type="reset" class="dbutton" name="reset" onclick="clearDialog()">Cancel</button>
   </form>
 </div>
+
 <script src="js/app.js"></script>
-
-
 <script type="text/javascript" src="js/jsjs/foundation.js"></script>
-<script type="text/javascript">
-  var login = document.getElementById('login'),
-      guest = document.getElementById('guest'),
-      signup = document.getElementById('signup'),
-      signupDialog = document.getElementById('signup-dialog'),
-      loginDialog = document.getElementById('login-dialog')
+<script type="text/javascript" src="js/dialog.js"></script>
 
-  login.addEventListener('click', function() {
-    loginDialog.className = 'dialog visible'
-  })
-  guest.addEventListener('click', function() {
-    // TODO: redirect to home use window.location = url
-    //console.log('go to ' + window.location.href + '/index')
-    document.location.href = 'home3.php';
-  })
-  signup.addEventListener('click', function() {
-    signupDialog.className = 'dialog visible'
-  })
-  function clearDialog() {
-    loginDialog.className = 'dialog'
-    signupDialog.className = 'dialog'
-  }
-</script>
 </body>
 </html>
