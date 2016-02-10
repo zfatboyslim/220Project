@@ -40,17 +40,18 @@
 <div id="signup-dialog" class="dialog">
   <form class="dialog-form" action="controllers/signup.php" method="post">
     <h1 style="color: black">SIGN UP</h1>
-    <input type="text" name="username" placeholder="Username" class="dinput" required />
-    <input type="text" name="password" placeholder="Password" class="dinput" required minlenght="6"/>
-    <input type="text" name="email" placeholder="Email" class="dinput" required/>
-    <input type="text" name="firstname" placeholder="First Name" class="dinput" required/>
-    <input type="text" name="lastname" placeholder="Last Name" class="dinput" required/>
-    <input type="text" name="phone" placeholder="Phone Number" class="dinput" required maxlength="10"/>
-    <input type="text" name="address" placeholder="Address" class="dinput" required/>
-    <button type="submit" name="submit-signup" class="dbutton">Agree</button>
-    <button type="reset" name="reset" onclick="clearDialog()" class="dbutton">Cancel</button>
+    <input type="text" class="dinput" id="usernameform" name="username" placeholder="Username" required />
+    <input type="text" class="dinput" id="passwordform" name="password" placeholder="Password" minlength="6" required  />
+    <input type="text" class="dinput" id="emailform" name="email" placeholder="Email" required />
+    <input type="text" class="dinput" id="fnameform" name="firstname" placeholder="First Name" required />
+    <input type="text" class="dinput" id="lnameform" name="lastname" placeholder="Last Name" required />
+    <input type="text" class="dinput" id="phoneform" name="phone" placeholder="Phone Number" maxlength="10" required />
+    <input type="text" class="dinput" name="address" placeholder="Address" required />
+    <button type="submit" name="submit-signup">Agree</button>
+    <button type="reset" name="reset" onclick="clearDialog()">Cancel</button>
   </form>
 </div>
+<script src="js/app.js"></script>
 
 
 <script type="text/javascript" src="js/jsjs/foundation.js"></script>
