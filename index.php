@@ -52,6 +52,8 @@
   </form>
 </div>
 
+<!--  Jquery Core Script -->
+<script src="assets/js/jquery-1.10.2.js"></script>
 <script src="js/app.js"></script>
 <script type="text/javascript" src="js/jsjs/foundation.js"></script>
 <script type="text/javascript" src="js/dialog.js"></script>
