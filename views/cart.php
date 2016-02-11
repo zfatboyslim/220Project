@@ -94,15 +94,15 @@
 <div class="products">
 	<center>
 	<table>
-		<tr>
-			<td>Product Name</td>
-			<td>Image</td>
-			<td>Description</td>
-			<td>Price</td>
-			<td>Quanitity</td>
-			<td></td>
-		</tr>
 		<?php if($totalrecord > 0){
+            echo "<tr>";
+            echo "<td>Product Name</td>";
+            echo "<td>Image</td>";
+            echo "<td>Description</td>";
+            echo "<td>Price</td>";
+            echo "<td>Quanitity</td>";
+            echo "<td></td>";
+            echo "</tr>";
 			for($myrow=0; $myrow <$totalrecord; $myrow++) {  
 
 			$result = $mydb->query("SELECT * FROM product WHERE productID='".$data[$myrow]['productID']."'")  or die("There is SQL Statement error");
@@ -120,10 +120,20 @@
 			echo "</td>";
 			echo "<td><a href='../controllers/cartdelete.php?productID=".$data[$myrow]['productID']."'>Delete</a></td>";
 			echo "</form></tr>";
-			}
-		}
+            }
+            echo "<input type='text' placeholder='Credit Card Number'>";
+            echo "<input type='text' placeholder='Card Holder'>";
+            echo "<input type='text' placeholder='CVV code'>";
+            echo "<input type='text' placeholder='Expiration Date'>";
+            echo "<a href='../controllers/checkout.php'>CheckOut</a>";
+
+        }
+        else{
+            echo "No Products in Cart";
+        }
 		?>	
 	</table>
+
 	</center>
 
 	<hr>

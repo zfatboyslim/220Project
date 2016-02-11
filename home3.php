@@ -49,7 +49,6 @@
         <li ><a href="../project/home3.php">HOME</a></li>
         <li><a href="../project/products.php">PRODUCTS</a></li>
         <li><a href="#contact-sec">CONTACT</a></li>
-        <li><a href="../project/myaccount.html">My Account</a></li>
 					<?php require("controllers/checksession.php") ?>
       </ul>
     </div>
@@ -59,7 +58,7 @@
 
 <!--Hidden Sign up Dialog-->
 <div id="signup-dialog" class="dialog">
-  <form class="dialog-form" action="controllers/signup.php" method="post">
+  <form class="dialog-form" action="controllers/signuphome.php" method="post">
     <center><h1 style="color: black">SIGN UP</h1>
     <input type="text" class="dinput" id="usernameform" name="username" placeholder="Username" required />
     <input type="text" class="dinput" id="passwordform" name="password" placeholder="Password" minlength="6" required  />

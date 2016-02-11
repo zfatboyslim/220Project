@@ -17,13 +17,20 @@
       $data[$i++] = $row;
    }
 
+      $result = $mydb->query("SELECT * FROM product WHERE productID='$test'")  or die("There is SQL Statement error");
+      while($row = mysqli_fetch_array($result)) {
+      $prod = $row;
+      }
+
+      $price = $prod['price'];
+
   if($data[0][0] > 0)
     {
       header('Location: http://localhost:81/project/views/cart.php');
     }
     else
     {
-	$mysql_str = "INSERT INTO `cart`(`username`, `productID`, `quantity`) VALUES ('$ses_user','$test','1')";
+	$mysql_str = "INSERT INTO `cart`(`username`, `productID`, `quantity`, `price`) VALUES ('$ses_user','$test','1','$price')";
 
 
    if (!mysqli_query($mydb,$mysql_str))
