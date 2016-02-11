@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2016 at 03:35 PM
+-- Generation Time: Feb 11, 2016 at 02:04 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -29,38 +29,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `cart` (
   `username` varchar(50) NOT NULL,
   `productID` varchar(50) NOT NULL,
-  `quantity` int(10) NOT NULL
+  `quantity` int(10) NOT NULL,
+  `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`username`, `productID`, `quantity`) VALUES
-('test', '1', 1),
-('test', '2', 1),
-('test', '3', 1),
-('test', '4', 1),
-('test', '5', 1),
-('test', '6', 1),
-('test', '7', 1),
-('test', '8', 1),
-('test', '9', 1),
-('test', '10', 1),
-('test', '11', 1),
-('test', '12', 1),
-('test', '13', 1),
-('test', '14', 1),
-('test', '15', 1),
-('test', '16', 1),
-('test', '17', 1),
-('test', '18', 1),
-('test', '19', 1),
-('test', '20', 1),
-('test', '21', 1),
-('test', '22', 1),
-('test', '23', 1),
-('test', '24', 1);
 
 -- --------------------------------------------------------
 
@@ -74,8 +45,19 @@ CREATE TABLE `orders` (
   `products` varchar(500) NOT NULL,
   `total` int(11) NOT NULL,
   `address` varchar(222) NOT NULL,
-  `status` int(11) NOT NULL
+  `status` int(11) NOT NULL,
+  `date` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`orderID`, `username`, `products`, `total`, `address`, `status`, `date`) VALUES
+(31, 'test', '1, 2, ', 0, 'sdas', 1, '2016-02-11 13:52:48'),
+(32, 'test', '1, 2, ', 50, 'sdas', 1, '2016-02-11 13:53:24'),
+(33, 'test', '1, ', 50, 'sdas', 1, '2016-02-11 13:57:50'),
+(34, 'yes', '2, ', 50, 'aasddasads', 1, '2016-02-11 14:04:11');
 
 -- --------------------------------------------------------
 
@@ -142,8 +124,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `email`, `firstname`, `lastname`, `phone`, `address`) VALUES
-('test', '81dc9bdb52d04dc20036dbd8313ed055', 'asdas', 'asdasdd', 'adsdsa', 123312132, 'adasdads'),
-('asd', 'e10adc3949ba59abbe56e057f20f883e', 'asd', 'asd', 'asd', 0, 'asd');
+('test', '81dc9bdb52d04dc20036dbd8313ed055', 'asddas', 'asdasdads', 'asdads', 123123, 'sdas'),
+('asd', 'e10adc3949ba59abbe56e057f20f883e', 'asd', 'asd', 'asd', 0, 'asd'),
+('irexjr', 'e10adc3949ba59abbe56e057f20f883e', 'asdads@live.com', 'Test', 'asdasd', 123213, 'asdamosdaqskdsad'),
+('asdasddas', '4e228deb27ce36b9684bb63609d2bc63', 'adsasdds', 'dasadsdas', 'sdaadsds', 213312132, 'asdasddasadsdas'),
+('yes', 'e10adc3949ba59abbe56e057f20f883e', 'asdasdads', 'asdasdasd', 'adsasddas', 123312123, 'aasddasads');
 
 --
 -- Indexes for dumped tables
@@ -169,7 +154,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `orderID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `orderID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `product`
 --
