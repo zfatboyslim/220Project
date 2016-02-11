@@ -135,58 +135,6 @@
 </div>
 <!--HOME SECTION TAG LINE END-->
 
-<div id="promotions" class="container set-pad" >
-  <div class="row text-center">
-    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-      <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">PROMOTIONS</h1>
-    </div>
-  </div>
-  <!--/.HEADER LINE END-->
-
-  <div class="row" >
-    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-      <div class="about-div">
-        <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
-          <h3 >Quality Education</h3>
-            <hr/>
-            <hr />
-            <p>
-                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo .
-
-            </p>
-            <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-      </div>
-    </div>
-    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-      <div class="about-div">
-        <i class="fa fa-bolt fa-4x icon-round-border" ></i>
-          <h3 >SYSTEMATIC APPROACH</h3>
-          <hr/>
-          <hr/>
-          <p>
-             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-             Aenean commodo .
-          </p>
-          <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-      </div>
-    </div>
-    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-      <div class="about-div">
-        <i class="fa fa-magic fa-4x icon-round-border" ></i>
-          <h3 >ONE TO ONE STUDY</h3>
-          <hr/>
-          <hr/>
-          <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-              Aenean commodo .
-          </p>
-          <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-      </div>
-    </div>
-  </div> <!-- end of the div class="row"-->
-</div> <!--end of div id="promotions"-->
-<!-- PRODUCTS SECTION END-->
 
 <!--Categories section-->
 <div id="categories" class="container set-pad" >
@@ -317,10 +265,10 @@
       <h2 ><strong>Our Location </strong></h2>
       <hr/>
         <div>
-          <h4>234/80 -UFG , New Street,</h4>
-          <h4>Switzerland.</h4>
+          <h4>Stamford Rama 9,</h4>
+          <h4>Thailand.</h4>
           <h4><strong>Call:</strong>  + 67-098-907-1269 / 70 / 71 </h4>
-          <h4><strong>Email: </strong>info@yourdomain.com</h4>
+          <h4><strong>Email: </strong>info@stamford.com</h4>
         </div>
     </div>
 
@@ -338,7 +286,7 @@
 <!-- CONTACT SECTION END-->
 
 <div id="footer">
-          &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+
 </div>
 <!-- FOOTER SECTION END-->
 
